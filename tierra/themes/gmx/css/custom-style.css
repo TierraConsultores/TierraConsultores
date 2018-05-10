@@ -72,6 +72,14 @@
   z-index: 1;
 }
 
+.slick-dots {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -60;
+  left: 0;
+}
+
 /* END: SLIDER OPTIONS */
 
 .social .fa-facebook-f::before, .fa-facebook::before {
