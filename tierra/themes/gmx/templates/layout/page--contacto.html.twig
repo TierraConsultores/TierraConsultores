@@ -1,6 +1,8 @@
 <div id="page-wrapper">
   <div id="page">
 
+
+  <!--Start: Branding and Menu -->
 <div id="stick">
   <div class="menu">
     <div class="container">
@@ -20,15 +22,8 @@
       </div>
     </div>
   </div>
-</div>
+</div> 
 
-  <!--Start: Slider -->
-    {% if page.slider %}
-      <div class="slider">
-              {{ page.slider }}
-      </div>
-    {% endif %}
-  <!--End: Slider -->
 
     {% if page.highlighted %}
         <div class="container">
@@ -38,29 +33,38 @@
         </div>
     {% endif %}
 
-      <!--- Start Profesionalismo y Eficiencia -->
-      {% if page.profesionalismoyeficiencia %}
-        <div class="container-fluid profesionalismo-y-eficiencia box">
+      <!--- Start content -->
+      {% if page.content %}
+        <div class="container contenido">
           <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                {{ page.profesionalismoyeficiencia }}
+            <div class="col-md-12">
+              <h1>{{ page['#title'] }}</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7">
+              {{ page.content }}
+            </div>
+            <div class="col-md-5">
+              <div class="ContactoTexto">
+                {{ page.contacto }}
+              </div>
             </div>
           </div>
         </div>
       {% endif %}
-      <!---End Profesionalismo y Eficiencia -->
+      <!---End content -->
 
-      <!--- Start Nuestra empresa -->
-      {% if page.nuestraempresa %}
-        <div class="container-fluid nuestraempresa box">
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                {{ page.nuestraempresa }}
-            </div>
+
+{#       <!--- Start content -->
+      {% if page.content %}
+        <div class="container">
+          <div class="row contenido">
+              {{ page.content }} 
           </div>
         </div>
       {% endif %}
-      <!---End Nuestra empresa -->
+      <!---End content --> #}
 
             <!--- Start Contacto -->
       {% if page.enlacesdeinteres %}
@@ -80,8 +84,10 @@
       {% endif %}
       <!---End Contacto -->
 
+
+
 <!--Start: Social -->
-    <div class="container-fluid rs">
+    <div class="container-fluid rs box">
       <div class="row">
         <div class="col-md-12">
           <div class="redsocial">

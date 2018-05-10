@@ -5,10 +5,11 @@
   margin: 1px 0 1px 0;
   padding: 0;
   overflow: hidden;
+  float: right;
 }
 
 #block-navegacionprincipal li {
-  float: right;
+  float: left;
   padding: 25px 5px 10px 5px;
 }
  
@@ -17,7 +18,6 @@
   display: block;
   color: #171010;
   font-size: 15px;
-  text-align: right;
   padding: 7px 14px;
   text-decoration: none;
 }
@@ -34,7 +34,6 @@
   border-radius: 5px;
   color: #fff;
 }
-
 
 /* END: MENU ICON RELATED STUFF */
 
@@ -201,10 +200,6 @@ body {
   background: #000;
 }
 
-
-
-
-
 .paragraph {
   margin: 60px 0;
 }
@@ -213,39 +208,35 @@ body {
 
 label {
     display: block;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 elemento {
   color: #FFA500;
 }
 
-
-
 div.off-canvas-wrapper {
   display: none;
 }
 
-
-
-
-
-a{
+a {
   color: #FFA500;
 }
 
-a:hover{
+a:hover {
   color: #ffc04c;
 }
 
-a.is-active{
+a.is-active {
   color: #FFA500;
 }
 
-ul.links.inline{
+ul.links.inline {
   padding: 0;
 }
 
-ul.links.inline li{
+ul.links.inline li {
   list-style: none;
 }
 
@@ -327,14 +318,7 @@ ul.links.inline li{
   padding: 4px 20px 4px 0;
 }
 
-.google_map p,
-.google_map .block{
-  margin: 0;
-}
 
-.google_map iframe{
-  display: block;
-}
 
 /*Credit link*/
 

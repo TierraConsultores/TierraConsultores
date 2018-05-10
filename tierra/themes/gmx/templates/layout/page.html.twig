@@ -26,12 +26,8 @@
 
 
 
-<!-- Header and Navbar -->
+
 <header class="main-header">
-
-
-
-  <!-- Start: Banner -->
     {% if page.welcome_banner_text %}
       <div class="container">
         <div class="banner">
@@ -43,26 +39,17 @@
         </div>
       </div>
     {% endif %}
-  <!-- End: Banner -->
+</header>
 
 
-  <!--Start: Highlighted -->
+
     {% if page.highlighted %}
-      <div class="highlighted">
         <div class="container">
-          <div class="row">
             <div class="col-md-12">
               {{ page.highlighted }}
             </div>
-          </div>
         </div>
-      </div>
     {% endif %}
-  <!--End: Highlighted -->
-
-</header>
-<!--End Header & Navbar -->
-
 
 
       <!--- Start content -->
