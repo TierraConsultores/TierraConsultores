@@ -9,7 +9,7 @@
 # Ignore sensitive information
 /tierra/sites/*/settings.php
 /tierra/sites/*/settings.local.php
-
+/private/
 # Ignore Drupal's file directory
 /tierra/sites/*/files/
 
