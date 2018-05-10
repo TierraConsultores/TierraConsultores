@@ -34,7 +34,8 @@
         "jquery/toggles": "4.0.0",
         "jquery/word-and-character-counter": "2.5.1",
         "progress-tracker/progress-tracker": "1.4.0",
-        "signature_pad/signature_pad": "2.3.0"
+        "signature_pad/signature_pad": "2.3.0",
+        "drupal/backup_migrate": "^4.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -42,7 +43,7 @@
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
         "mikey179/vfsstream": "~1.2",
-        "phpunit/phpunit": "\u003E=4.8.28 \u003C5",
+        "phpunit/phpunit": ">=4.8.28 <5",
         "symfony/css-selector": "~2.8"
     },
     "authors": [
