@@ -1,31 +1,31 @@
 <div id="page-wrapper">
   <div id="page">
 
-<div id="stick">
-  <div class="menu">
-    <div class="container">
-      <div class="row">
-        {% if page.header %}
-          <div class="col-xs-6 col-md-4">
-            {{ page.header }}
+    <div id="stick">
+      <div class="menu">
+        <div class="container">
+          <div class="row">
+            {% if page.header %}
+              <div class="col-xs-6 col-md-4">
+                {{ page.header }}
+              </div>
+            {% endif %}
+            <!-- Navigation -->
+            {% if page.menu %}
+              <div class="col-xs-6 col-md-8">
+                {{ page.menu }} 
+              </div>
+            {% endif %}
+            <!--End Navigation -->
           </div>
-        {% endif %}
-        <!-- Navigation -->
-        {% if page.menu %}
-          <div class="col-xs-6 col-md-8">
-            {{ page.menu }} 
-          </div>
-        {% endif %}
-        <!--End Navigation -->
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
   <!--Start: Slider -->
     {% if page.slider %}
       <div class="slider">
-              {{ page.slider }}
+        {{ page.slider }}
       </div>
     {% endif %}
   <!--End: Slider -->
@@ -37,10 +37,10 @@
             </div>
         </div>
     {% endif %}
-
+ 
       <!--- Start Profesionalismo y Eficiencia -->
       {% if page.profesionalismoyeficiencia %}
-        <div class="container-fluid profesionalismo-y-eficiencia box">
+        <div class="container-fluid profesionalismo-y-eficiencia boxpye">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 {{ page.profesionalismoyeficiencia }}
@@ -49,6 +49,34 @@
         </div>
       {% endif %}
       <!---End Profesionalismo y Eficiencia -->
+
+      <!--- Start Qué Hacemos 3 columnas -->
+        <div class="container-fluid">
+          <div class="row ca">
+            <div class="col-md-4">
+                {{ page.quea }}
+            </div>
+            <div class="col-md-4">
+                {{ page.queb }}
+            </div>
+            <div class="col-md-4">
+                {{ page.quec }}
+            </div>
+          </div>
+        </div>
+      <!---End Qué Hacemos 3 columnas -->
+
+      <!--- Start About -->
+      {% if page.about %}
+        <div class="container-fluid about box">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                {{ page.about }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <!---End About -->
 
       <!--- Start Nuestra empresa -->
       {% if page.nuestraempresa %}
@@ -62,7 +90,7 @@
       {% endif %}
       <!---End Nuestra empresa -->
 
-            <!--- Start Contacto -->
+      <!--- Start Enlaces de interés -->
       {% if page.enlacesdeinteres %}
         <div class="container-fluid enlacesdeinteres">
           <div class="row">
@@ -78,7 +106,7 @@
           </div>
         </div>
       {% endif %}
-      <!---End Contacto -->
+      <!---End Enlaces de interés -->
 
 <!--Start: Social -->
     <div class="container-fluid rs">

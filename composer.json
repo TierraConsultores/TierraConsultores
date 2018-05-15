@@ -6,6 +6,7 @@
         "codemirror/codemirror": "5.36.0",
         "cweagans/composer-patches": "^1.6.0",
         "drupal/admin_toolbar": "^1.23",
+        "drupal/backup_migrate": "^4.0",
         "drupal/blazy": "^1.0@RC",
         "drupal/config_update": "^1.5",
         "drupal/console": "^1.0.2",
@@ -21,6 +22,7 @@
         "drupal/slick_extras": "^1.0@beta",
         "drupal/slick_views": "^1.0@RC",
         "drupal/stickynav": "^1.1",
+        "drupal/twig_tweak": "^2.0",
         "drupal/webform": "^5.0@RC",
         "drupal/webform_layout_container": "^1.1",
         "drush/drush": "~8.0|^9.0.0-beta8",
@@ -34,8 +36,7 @@
         "jquery/toggles": "4.0.0",
         "jquery/word-and-character-counter": "2.5.1",
         "progress-tracker/progress-tracker": "1.4.0",
-        "signature_pad/signature_pad": "2.3.0",
-        "drupal/backup_migrate": "^4.0"
+        "signature_pad/signature_pad": "2.3.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",

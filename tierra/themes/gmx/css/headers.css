@@ -1,5 +1,5 @@
 .main-header {
-  background: url(../images/bg.jpg);
+  background: url(../images/fosil.jpg);
   background-size: auto auto;
   color: #fff;
   background-size: cover;
@@ -150,6 +150,16 @@ div.EditarContenido {
   color: #333131;
 }
 
+.ca {
+  background: #f2f1f1;
+  color: #888787;
+  text-align: center;
+}
+
+.ca p {
+  font-size: 15px;
+}
+
 .nuestraempresa {
   background: #f2f1f1;
   color: #888787;
@@ -183,13 +193,6 @@ margin: 50px 0 50px 0;
   color: #888787;
   text-align: center;
 }
-
-
-/* .contacto {
-  background: #fff;
-  color: #888787;
-  text-align: center;
-} */
 
 .enlacesdeinteres  {
   background: #333131;
@@ -232,7 +235,6 @@ margin: 50px 0 50px 0;
   text-align: center;
 }
 
-
 .redsocial {
   padding: 40px 0;
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1), 0px -1px 0px rgba(255, 255, 255, 0.1);
@@ -261,40 +263,7 @@ margin: 50px 0 50px 0;
   padding: 0 0 30px 0;
   text-align: center;
 }
-
-
-
 .box img {
   border-radius: 50%;
 }
 
-/* @media only screen and (min-width: 450px) {
-  .box {
-    padding: 90px 90px;
-  }
-  .box h2 {
-    font-size: 45px;
-  }
-} */
-
-@media only screen and (min-width: 450px) {
-  .main-header {
-    background: url(../images/bg.jpg);
-    color: #fff;
-    padding: 0 0 60px 0;
-    background-size: cover;
-    position: relative;
-  }
-
-}
-
-@media only screen and (min-width: 450px) {
-  .estilokvrol {
-    background: url(../images/kvrol.jpg);
-    color: #fff;
-    padding: 30px 0 60px 0;
-    background-size: cover;
-    position: relative;
-  }
-
-}
