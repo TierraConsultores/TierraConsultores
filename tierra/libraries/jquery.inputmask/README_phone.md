@@ -21,5 +21,3 @@ $(selector).inputmask("phone", {
 - phonenl
 - phoneru
 - phoneuk
-- phoneca
-- phoneus

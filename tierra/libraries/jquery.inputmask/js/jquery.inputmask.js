@@ -31,14 +31,17 @@
 						});
 					case "getemptymask":
 						return input && input.inputmask ? input.inputmask.getemptymask() : "";
-					case "hasMaskedValue": //check whether the returned value is masked or not; currently only works reliable when using jquery.val fn to retrieve the value
+					case "hasMaskedValue": //check wheter the returned value is masked or not; currently only works reliable when using jquery.val fn to retrieve the value
 						return input && input.inputmask ? input.inputmask.hasMaskedValue() : false;
 					case "isComplete":
 						return input && input.inputmask ? input.inputmask.isComplete() : true;
 					case "getmetadata": //return mask metadata if exists
 						return input && input.inputmask ? input.inputmask.getmetadata() : undefined;
 					case "setvalue":
-					    Inputmask.setValue(input, options);
+						$(input).val(options);
+						if (input && input.inputmask === undefined) { //reactivate jquery.clone
+							$(input).triggerHandler("setvalue");
+						}
 						break;
 					case "option":
 						if (typeof options === "string") {
