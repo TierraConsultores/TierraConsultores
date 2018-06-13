@@ -9,6 +9,7 @@ core: '8.x'
 libraries:
   - gmx/bootstrap
   - gmx/global-components
+  - gmx/fonts
 
 #Regions
 regions:
