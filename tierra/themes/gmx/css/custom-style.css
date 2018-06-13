@@ -650,42 +650,6 @@ nav h2{
 }
 
 
-/*Comment*/
-
-.comment-wrap{
-  overflow: hidden;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #F5F5F5;
-}
-
-.comment-wrap .author-details{
-  float: left;
-  width: 20%;
-}
-
-.comment-wrap .author-comments{
-  padding-left: 5px;
-  float: left;
-  width: 80%;
-}
-
-.comment-submitted{
-  padding: 5px 10px;
-  border: 1px solid #eee;
-  font-size: 12px;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.comment-wrap .author-comments h3{
-  margin-top: 10px;
-}
-
-.comment-wrap .author-comments p{
-  margin-bottom: 10px;
-}
-
 /*links inline*/
 
 ul.links.inline li{
@@ -708,12 +672,18 @@ ul.links.inline li{
   margin-bottom: 5px;
 }
 
-
 a.has-submenu  {
 	color: #fff;
 }
 
-
 .sub-arrow {
 	display: none;
+}
+
+.flex-control-nav {
+  display: none;
+}
+
+.flexslider {
+  margin: 0;
 }
