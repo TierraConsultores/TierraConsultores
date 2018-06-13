@@ -1,9 +1,9 @@
 /*!
 * phone-codes/phone.js
 * https://github.com/RobinHerbots/Inputmask
-* Copyright (c) 2010 - 2018 Robin Herbots
+* Copyright (c) 2010 - 2017 Robin Herbots
 * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-* Version: 4.0.0-beta.54
+* Version: 3.3.11
 */
 
 !function(factory) {
@@ -888,56 +888,7 @@
                 name_ru: "Исландия",
                 desc_ru: ""
             }, {
-                mask: "+39(0##)####-##-##",
-                cc: "IT",
-                cd: "Italy",
-                desc_en: "",
-                name_ru: "Италия",
-                desc_ru: ""
-            }, {
-                mask: "+39(0##)####-###",
-                cc: "IT",
-                cd: "Italy",
-                desc_en: "",
-                name_ru: "Италия",
-                desc_ru: ""
-            }, {
-                mask: "+39(0##)###-###",
-                cc: "IT",
-                cd: "Italy",
-                desc_en: "",
-                name_ru: "Италия",
-                desc_ru: ""
-            }, {
-                mask: "+39(0##)##-###",
-                cc: "IT",
-                cd: "Italy",
-                desc_en: "",
-                name_ru: "Италия",
-                desc_ru: ""
-            }, {
-                mask: "+39(0##)##-##",
-                cc: "IT",
-                cd: "Italy",
-                desc_en: "",
-                name_ru: "Италия",
-                desc_ru: ""
-            }, {
-                mask: "+39(0#)##-##",
-                cc: "IT",
-                cd: "Italy",
-                desc_en: "",
-                name_ru: "Италия",
-                desc_ru: ""
-            }, {
-                mask: "+39(3##)###-##-##",
-                cc: "IT",
-                cd: "Italy",
-                desc_en: "",
-                name_ru: "Италия",
-                desc_ru: ""
-            }, {
-                mask: "+39(3##)##-##-##",
+                mask: "+39(###)####-###",
                 cc: "IT",
                 cd: "Italy",
                 desc_en: "",
