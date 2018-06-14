@@ -106,6 +106,16 @@ body {
 
 /* END: SLIDER OPTIONS */
 
+.region-sidebar-second {
+  margin-top: 30px;
+}
+
+.slick-arrow::before {
+  color: #000;
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+
 .social .fa-facebook-f::before, .fa-facebook::before {
   content: "\f09a";
 }
