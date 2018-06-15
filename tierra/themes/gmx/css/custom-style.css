@@ -67,7 +67,7 @@ body {
 
 /* END: MENU ICON RELATED STUFF */
 
-.menu li a:active {
+.menu li a.is-active  {
   background-color: #AEAC16;
   color: #fff;
 }
