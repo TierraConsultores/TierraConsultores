@@ -112,7 +112,7 @@ body {
 /* END: SLIDER OPTIONS */
 
 .region-sidebar-second {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .slick-arrow::before {
