@@ -67,6 +67,12 @@ body {
 
 /* END: MENU ICON RELATED STUFF */
 
+.menu li a:hover {
+  background-color: #AEAC16;
+  border-radius: 5px;
+  color: #fff;
+}
+
 /* START: SLIDER OPTIONS */
 .slide__caption {
   padding: 0px;
