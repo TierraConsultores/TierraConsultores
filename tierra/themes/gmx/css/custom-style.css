@@ -67,9 +67,8 @@ body {
 
 /* END: MENU ICON RELATED STUFF */
 
-.menu li a:hover {
+.menu li a.active {
   background-color: #AEAC16;
-  border-radius: 5px;
   color: #fff;
 }
 
