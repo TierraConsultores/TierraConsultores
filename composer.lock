@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a62e2f1067c910313f2a25c86715a16",
+    "content-hash": "70b1eece79f8f34ea20a4b90095a4714",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2217,6 +2217,88 @@
             }
         },
         {
+            "name": "drupal/devel",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "01f3349ef75f6e21fceef24be9d3d6506ca29647"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1507197844",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "homepage": "https://github.com/weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Hans Salvisberg",
+                    "homepage": "https://www.drupal.org/u/salvis",
+                    "email": "drupal@salvisberg.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Luca Lusso",
+                    "homepage": "https://www.drupal.org/u/lussoluca",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Marco (willzyx)",
+                    "homepage": "https://www.drupal.org/u/willzyx",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/3236/committers"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                },
+                {
+                    "name": "willzyx",
+                    "homepage": "https://www.drupal.org/user/1043862"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/devel",
+                "issues": "http://drupal.org/project/devel",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "drupal/extlink",
             "version": "1.1.0",
             "source": {
@@ -2653,55 +2735,6 @@
             }
         },
         {
-            "name": "drupal/responsive_menu",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/responsive_menu",
-                "reference": "8.x-2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/responsive_menu-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "8dc4f4251ada211fad52aa9d0c02d50c4752d457"
-            },
-            "require": {
-                "drupal/core": "^8.4"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1515872884",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Tancredi D'Onofrio (tanc)",
-                    "homepage": "https://www.drupal.org/u/tanc",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Provides a javascript based off-canvas responsive menu with depth. At wider browser widths it provides a horizontal menu capable of drop downs and flyouts",
-            "homepage": "https://drupal.org/project/responsive_menu",
-            "support": {
-                "source": "https://cgit.drupalcode.org/responsive_menu",
-                "issues": "https://drupal.org/project/issues/responsive_menu"
-            }
-        },
-        {
             "name": "drupal/slick",
             "version": "1.0.0",
             "source": {
@@ -2857,53 +2890,6 @@
             "homepage": "https://www.drupal.org/project/slick_views",
             "support": {
                 "source": "http://cgit.drupalcode.org/slick_views"
-            }
-        },
-        {
-            "name": "drupal/stickynav",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/stickynav",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/stickynav-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "06bdbe13f559b25f2f4c7a7b980cc2c6ba033079"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1484847483",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "skein",
-                    "homepage": "https://www.drupal.org/user/784174"
-                }
-            ],
-            "description": "Module to make navigation on the website sticky when you scroll down the page.",
-            "homepage": "https://www.drupal.org/project/stickynav",
-            "support": {
-                "source": "http://cgit.drupalcode.org/stickynav"
             }
         },
         {

@@ -22,6 +22,7 @@ regions:
   page_title: 'Page Title'
   breadcrumb: 'Breadcrumb'
   content: 'Content'
+  subcontent: 'Sub Content'
   profesionalismoyeficiencia: 'Profesionalismo y Eficiencia'
   about: 'About'
   nuestraempresa: 'Nuestra empresa'

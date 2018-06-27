@@ -1,30 +1,51 @@
 <div id="page-wrapper">
   <div id="page">
 
-
-  <!--Start: Branding and Menu -->
-<div id="stick">
-  <div class="menu">
-    <div class="container">
-      <div class="row">
-        {% if page.header %}
-          <div class="col-xs-6 col-md-4">
-            {{ page.header }}
-          </div>
-        {% endif %}
-        <!-- Navigation -->
-        {% if page.menu %}
-          <div class="col-xs-6 col-md-8">
-            {{ page.menu }} 
-          </div>
-        {% endif %}
-        <!--End Navigation -->
-      </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="" href="/">{{ page.header }}</a>
     </div>
-  </div>
-</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/" class="active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quiénes somos </a>
+          <ul class="dropdown-menu">
+            <li><a href="/nuestra-empresa">Nuestra empresa</a></li>
+            <li><a href="/nuestros-profesionales">Nuestros profesionales</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Qué hacemos </a>
+          <ul class="dropdown-menu">
+            <li><a href="/areas-actuacion">Áreas de actuación</a></li>
+            <li><a href="/clientes">Clientes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Medios </a>
+          <ul class="dropdown-menu">
+            <li><a href="/galeria">Galería</a></li>
+            <li><a href="/videos">Videos</a></li>
+          </ul>
+        </li>
+        <li><a href="/contacto">Contáctenos</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
 <header class="main-header">
@@ -65,41 +86,21 @@
         </div>
       <!---End content -->
 
-{#   <!-- start: Container -->
-  <div class="container">
-
-      <!--- Start Left SideBar -->
-      {% if page.sidebar_first %}
-        <div class="sidebar" >
-          <div class = {{sidebarfirst}} >
-            {{ page.sidebar_first }}
+      <!--- Start Qué Hacemos 3 columnas -->
+        <div class="container-fluid">
+          <div class="row ca">
+            <div class="col-md-4">
+                {{ page.quea }}
+            </div>
+            <div class="col-md-4">
+                {{ page.queb }}
+            </div>
+            <div class="col-md-4">
+                {{ page.quec }}
+            </div>
           </div>
         </div>
-      {% endif %}
-      <!---End Right SideBar -->
-
-      <!--- Start content -->
-      {% if page.content %}
-        <div class="content_layout">
-          <div class={{contentlayout}}>
-            {{ page.content }}
-          </div>
-        </div>
-      {% endif %}
-      <!---End content -->
-
-      <!--- Start Right SideBar -->
-      {% if page.sidebar_second %}
-        <div class="sidebar">
-          <div class={{sidebarsecond}}>
-            {{ page.sidebar_second }}
-          </div>
-        </div>
-      {% endif %}
-      <!---End Right SideBar -->
-      
-    </div>
-    <!--End Content --> #}
+      <!---End Qué Hacemos 3 columnas -->
 
             <!--- Start Contacto -->
       {% if page.enlacesdeinteres %}

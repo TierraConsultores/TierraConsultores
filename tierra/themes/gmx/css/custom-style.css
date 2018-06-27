@@ -4,7 +4,8 @@ body {
   font-style: normal;
   font-weight: 100;
   color: #888787;
-  overflow-x: hidden;
+  padding-top: 65px;
+
 }
 
 /* roboto-100 - latin */
@@ -29,47 +30,49 @@ body {
   margin: 60px 0;
 }
 
+/* #page {
+  margin-top: 50px;
+} */
+
 /* START: MENU ICON RELATED STUFF */
 
-#block-navegacionprincipal ul {
-  list-style-type: none;
-  margin: 1px 0 1px 0;
-  padding: 0;
-  overflow: hidden;
-  float: right;
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
 }
 
-#block-navegacionprincipal li {
-  float: left;
-  padding: 25px 5px 10px 5px;
+.navbar-default {
+  background-color: #fff;
+  border-color: transparent;
 }
 
-#block-navegacionprincipal li a {
-  display: block;
-  color: #171010;
-  font-size: 15px;
+.navbar-right {
+  padding-top:30px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a {
+  color: #333;
+  background-color: transparent;
+  font-size: 17px;
   padding: 7px 14px;
-  text-decoration: none;
+  margin: 0 5px;
 }
 
-/* Change the link color to #111 (black) on hover */
-#block-navegacionprincipal li a:hover {
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
   background-color: #AEAC16;
   border-radius: 5px;
-  color: #fff;
 }
-
-#block-navegacionprincipal li a.is-active {
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a.current {
+  color: #fff;
   background-color: #AEAC16;
   border-radius: 5px;
-  color: #fff;
 }
-
-/* END: MENU ICON RELATED STUFF */
-
-.menu li a.is-active  {
-  background-color: #AEAC16;
+.navbar-default .navbar-nav > li > a.active {
   color: #fff;
+  background-color: #AEAC16;
+  border-radius: 5px;
+  padding: 7px 14px;
 }
 
 /* START: SLIDER OPTIONS */
@@ -192,30 +195,10 @@ img {
 }
 /* End: Logotipo */
 
-
-/* ESTILOS DE LOS BRICKS */
-
-.estilo {
-  padding: 30px 30px 30px 30px;
-}
-
-.estilo1 {
-  background-color: #00aced;
-  background: url(../images/circles-dark.png);
-  color: #fff;
-  padding: 30px 30px 30px 30px;
-}
-
-.estilopapel {
-  background: url(../images/papel.png);
-  padding: 30px 30px 30px 30px;
-}
-
 #block-designby {
   color: #fff;
   text-align: right;
 }
-
 
 /* Redes sociales en el banner principal */
 div.redes {
@@ -259,9 +242,7 @@ ul.links.inline li {
   list-style: none;
 }
 
-
 /*Banner*/
-
 
 .welcome-banner-text-one{
   text-align: center;
@@ -275,7 +256,6 @@ ul.links.inline li {
   font-weight: bold;
   color: #fff;
 }
-
 
 /*footerwidget*/
 
@@ -299,7 +279,6 @@ ul.links.inline li {
 .copyright p{
   margin: 13px 0;
 }
-
 
 /*bottom-widgets*/
 
@@ -336,8 +315,6 @@ ul.links.inline li {
   display: block;
   padding: 4px 20px 4px 0;
 }
-
-
 
 /*Credit link*/
 
@@ -443,17 +420,8 @@ input[type="submit"]:hover{
   color: #AEAC16;
 }
 
-
-
 .path-frontpage .feed-icon{
   display: none;
-}
-
-/*MENU*/
-
-.navbar-default .navbar-toggle{
-  background: #fff;
-  margin-right: 0;
 }
 
 nav h2{
@@ -476,7 +444,6 @@ nav h2{
 .menu-base-theme li a:active {
   color: #fff;
 }
-
 
 .main-menu {
   position: relative;
@@ -508,78 +475,8 @@ nav h2{
   z-index: 999;
 }
 
-/*breadcrumb*/
-
-.breadcrumb{
-  background: none;
-  padding: 0;
-  margin: 0;
-  border-bottom: 1px solid #eee;
-}
-
-.breadcrumb ul{
-  padding: 0;
-}
-
-.breadcrumb ul li{
-  display: inline-block;
-}
-
-/*search form*/
-
-#search-block-form{
-  display: table;
-  width: 100%;
-}
-
-#search-block-form .form-item,
-#search-block-form .form-actions{
-  display: table-cell;
-  vertical-align: top;
-}
-
-#search-block-form input{
-  width: 100%;
-}
-
-/*Demo typography*/
-
-.bd-example {
-  position: relative;
-  padding: 20px;
-  border: 2px solid #f7f7f9;
-}
-
-.highlight{
-  padding: 20px;
-  background-color: #f7f7f9;
-}
-
-.highlight pre{
-  border: 0;
-  background: none;
-}
-
-.bd-example-type .table tr:first-child td {
-  border-top: 0;
-}
-
-.bd-example-type h1,
-.bd-example-type h2,
-.bd-example-type h3,
-.bd-example-type h4,
-.bd-example-type h5,
-.bd-example-type h6 {
-  margin: 0;
-}
-
-.bd-example-type .table td {
-  padding: 15px 0;
-  border-color: #eee;
-}
-
 /*Contact form*/
-
+/* 
 .contact-message-feedback-form{
   max-width: 650px;
   margin: 0 auto;
@@ -592,7 +489,7 @@ nav h2{
 .contact-message-feedback-form .form-email,
 .contact-message-feedback-form .form-textarea{
   width: 100%;
-}
+} */
 
 /*user-login-form*/
 
@@ -663,7 +560,6 @@ nav h2{
 .maintenance-page .name-and-slogan{
   display: none;
 }
-
 
 /*links inline*/
 
