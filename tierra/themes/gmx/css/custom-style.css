@@ -5,7 +5,7 @@ body {
   font-weight: 100;
   color: #888787;
   padding-top: 65px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* roboto-100 - latin */
