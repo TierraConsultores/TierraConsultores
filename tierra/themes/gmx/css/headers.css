@@ -124,6 +124,9 @@ img {
   padding: 50px 20px 20px 20px;
 }
 
+.panel {
+  margin-top: 60px;
+}
 div.EntrarSalir {
   display: block;
   float: right;
